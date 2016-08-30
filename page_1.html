@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en>
+<head>
+    <meta charset=UTF-8">
+    <title>
+        Program Overview
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <img alt="MTA" src="./images/ACME.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-9">
+                <p style="font-size:50px;" class="text-center text-uppercase">
+                    Arup City Modeling Environment
+                </p>
+            </div>
+            <div class="col-md-2">
+                <img alt="Arup" src="./images/arup-logo-300-x-500.jpg" class="img-responsive">
+            </div>
+        </div>
+<!--             <div class="row">
+                <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation" class="active">
+                        <a href="#">
+                            PROGRAM OVERVIEW
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            STATION DETAILS
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#">
+                            RESOURCE MANAGEMENT
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>
+                                Geographic Areas & Scenarios
+                            </h4>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <div class="dropdown">
+                                    <button id="dd_package" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-primary btn-md">
+                                        Geographic Area
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul aria-labelledby="dd_package" class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                Area 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 4
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 5
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 6
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 7
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Area 8
+                                            </a>
+                                        </li>
+                                    </ul>
+                                <button type="button" class="btn btn-primary">
+                                +
+                                </button>
+                                </div>
+                                <br>
+                                <div class="dropdown">
+                                    <button id="dd_package" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-primary btn-md">
+                                        Scenario
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul aria-labelledby="dd_package" class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                Scenario 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 4
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 5
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 6
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 7
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Scenario 8
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary">
+                                        +
+                                    </button>
+                                </div>
+                                <br>
+<!--                                 <div class="btn-group">
+                                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4>
+                            Data Sources
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="span2">
+                            <button type="button" class="btn btn-primary btn-block">
+                                Roadway
+                            </button>
+                            <br>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-primary btn-block">
+                                Transit
+                            </button>
+                            <br>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-primary btn-block">
+                                Land Use / Forecast
+                            </button>
+                            <br>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-primary btn-block">
+                                Incidents
+                            </button>
+                            <br>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-default btn-block">
+                                O-D
+                            </button>
+                            <br>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-default btn-block">
+                                Spatial, Gradient, Rasters, 3D
+                            </button>
+                            <br>
+                            <!-- <br> -->
+                            <button type="button" class="btn btn-default btn-block">
+                                Tool Outputs
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4>
+                            Map Editor
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+<!--                             <div class="col-md-3">
+                                <div style="margin:15px; margin-top:0px;" class="well">
+                                    <h4>
+                                        Filters
+                                    </h4>
+                                    <div style="margin:0px" class="row">
+                                        <div style="display:inline-block;" role="alert" class="alert alert-success alert-dismissible">
+                                            Manhattan
+                                            <button data-dismiss="alert" aria-label="Close" type="button" class="close">
+                                                <span aria-hidden="true">
+                                                    &times;
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div style="display:inline-block;" role="alert" class="alert alert-success alert-dismissible">
+                                            Central Mezzanine
+                                            <button data-dismiss="alert" aria-label="Close" type="button" class="close">
+                                                <span aria-hidden="true">
+                                                    &times;
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-md-12">
+                                <div style="height:600px" id="map_id">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4>
+                            Utilities
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <div>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <strong>
+                                        Module Control
+                                    </strong>
+                                </div>
+
+                                <div class="panel-body">
+                                <div class="dropdown">
+                                    <button id="dd_package" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle btn btn-primary btn-md">
+                                        Choose Module
+                                        <span class="caret">
+                                        </span>
+                                    </button>
+                                    <ul aria-labelledby="dd_package" class="dropdown-menu">
+                                        <li>
+                                            <a href="#">
+                                                1. Parking Calculator
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                2. Traffic Conditions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                3. Transit Conditions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                4. Transportation Impact Analysis
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                5. Scenario Planning
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+<!--                                     <div style="height:207px;" id="progress_chart">
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <strong>
+                                        Module Functions
+                                    </strong>
+                                </div>
+                                <div class="panel-body">
+                                    <!-- <div style="height:207px;" id="discipline_cost_chart">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    </script>
+    <script src="https://code.highcharts.com/highcharts.js">
+    </script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js">
+    </script>
+    <script src="muniStops.js">
+    </script>
+    <script src="map_bay.js">
+    </script>
+    <script src="progress_chart.js">
+    </script>
+    <script src="discipline_cost_chart.js">
+    </script>
+</body>
+</html>

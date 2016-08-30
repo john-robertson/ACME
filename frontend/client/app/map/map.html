@@ -1,0 +1,17 @@
+<div class="container">
+  <md-content>
+  	<section style="border:5px solid gray; border-radius: 10px; width: 150; float: left" layout="column" layout-sm="column" layout-align="center center">
+  	  <h1><b>Modules</b></h1>
+      <md-button class="md-raised" ng-click="showEvents()">Events</md-button>
+      <md-button class="md-raised">Vehicle Positions</md-button>
+      <md-button ng-disabled="true" class="md-raised">Parking</md-button>
+      <md-button ng-disabled="true" class="md-raised">Disabled</md-button>
+    </section>
+    <leaflet-basic-directive 
+                             mapheight="750"
+                             mapid="map"
+                             data="vm.data"
+                             style="width:85%;float:right">
+    </leaflet-basic-directive>
+  </md-content>
+</div>

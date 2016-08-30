@@ -1,0 +1,26 @@
+<div class="container" ng-cloak>
+  <md-content layout="column">
+    <h1 class="md-display-1">Twin Peaks - Fullstack Starter Kit</h1>
+    <p class="md-body-1">
+      Twin Peaks is cleverly named after
+      <small class="text-muted">(a meeting room in the Arup San Fransisco office)</small>
+      its two main components: frontend and backend servers.
+    </p>
+    <h2 class="md-title">twinpeaks-frontend<br/>
+      <small><a href="#">https://github.com/ArupAUS/twinpeaks-frontend</a></small>
+    </h2>
+    <p class="md-body-1">
+      This is an AngularJS application running on NodeJS with ExpressJS. You can use this repository alone, or match it
+      with the twinpeaks-backend repository to leverage a RESTfull API in your application. We reverse proxy requests on
+      <code>/rest</code> in the frontend application to the RESTfull API.
+    </p>
+    <h2 class="md-title">twinpeaks-backend<br/>
+      <small><a href="#">https://github.com/ArupAUS/twinpeaks-backend</a></small>
+    </h2>
+    <p class="md-body-1">
+      This is a Django Rest Framework RESTfull API that can support your frontend application. If the backend server is
+      running you will see a list of available API routes below:
+    </p>
+    <pre ng-if="vm.routes">{{vm.routes}}</pre>
+  </md-content>
+</div>

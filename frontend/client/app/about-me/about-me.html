@@ -1,0 +1,35 @@
+<div class="container">
+  <md-content layout="column">
+    <h1 class="md-display-1">About Me</h1>
+    <p class="md-body-1">
+      My name is John.
+    </p>
+  </md-content>
+  <md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="{{vm.name}}">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">{{vm.name}}</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="{{vm.title}}">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">{{vm.title}}</h1>
+          <leaflet-basic-directive mapwidth="100%"
+                             mapheight="500"
+                             mapid="map"
+                             data="vm.data">
+          </leaflet-basic-directive>
+
+        </md-content>
+      </md-tab>
+      <md-tab label="{{vm.office}}">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">{{vm.office}}</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
