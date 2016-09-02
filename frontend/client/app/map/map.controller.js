@@ -14,11 +14,11 @@
       		'format': 'json'
       	}
       };
-
-      $http.get('/rest/osm/', vm.config).then(function (response) {
-      	vm.data = response.data;
-      });
       
+      
+      $http.get('/rest/511/', vm.config).then(function (response) {
+        vm.data = response.data;
+      });
 
       vm.$onInit = function () {};
     }

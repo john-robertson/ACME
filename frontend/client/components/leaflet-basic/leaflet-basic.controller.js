@@ -40,7 +40,7 @@
         }
       });
 
-// AC Transit Real Time Vehicle Positions
+/* AC Transit Real Time Vehicle Positions
       $scope.$watch('data', function (data) {
         if (data) {
           angular.extend(vm, {
@@ -58,10 +58,10 @@
                 'Route id: <b>' + feature.properties.route_id + '</b>');
               }
             }
-          });
+          });*/
 
 
-/* 511 Events
+//  511 Events
       $scope.$watch('data', function (data) {
         if (data) {
           angular.extend(vm, {
@@ -80,7 +80,8 @@
                 'Updated: <b>' + feature.properties.updated + '</b>');
               }
             }
-          });*/
+          });
+
 
           leafletData.getMap(vm.mapid).then(function (map) {
             setTimeout(function () {

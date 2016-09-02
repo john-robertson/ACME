@@ -1,17 +1,119 @@
-<div class="container">
-  <md-content>
-  	<section style="border:5px solid gray; border-radius: 10px; width: 150; float: left" layout="column" layout-sm="column" layout-align="center center">
-  	  <h1><b>Modules</b></h1>
-      <md-button class="md-raised" ng-click="showEvents()">Events</md-button>
-      <md-button class="md-raised">Vehicle Positions</md-button>
-      <md-button ng-disabled="true" class="md-raised">Parking</md-button>
-      <md-button ng-disabled="true" class="md-raised">Disabled</md-button>
-    </section>
-    <leaflet-basic-directive 
-                             mapheight="750"
-                             mapid="map"
-                             data="vm.data"
-                             style="width:85%;float:right">
-    </leaflet-basic-directive>
-  </md-content>
-</div>
+<html>
+  <head>
+    <link rel="stylesheet" href="/map.css" type="text/css">
+    <script>
+      function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+
+      function NewYork() {
+        document.getElementById("myNav").style.width = "0%";
+        
+      }
+      window.onload = openNav();
+    </script>
+  </head>
+  <body>
+    <div class="container" ng-controller="MapController">
+      <md-content>
+      	<section style="border:5px solid gray; border-radius: 10px; width: 150; float: left" layout="column" layout-sm="column" layout-align="center center">
+      	  <h1><b>Modules</b></h1>
+          <md-button class="md-raised">Events</md-button>
+          <md-button class="md-raised">Vehicle Positions</md-button>
+          <md-button ng-disabled="true" class="md-raised">Parking</md-button>
+          <md-button ng-disabled="true" class="md-raised">Disabled</md-button>
+        </section>
+        <md-button onclick="openNav()"><b>Select Map Region</b></md-button>
+        <leaflet-basic-directive 
+                                 mapheight="750"
+                                 mapid="map"
+                                 data="vm.data"
+                                 style="width:85%;float:right">
+        </leaflet-basic-directive>
+      </md-content>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content" flex-xs flex-gt-xs="50" layout="row">
+        <md-card>
+          <md-card-actions layout="column" layout-align="center center">
+            <img src="/sf.png" alt="SF_img"/>
+            <br>
+            <md-button onclick="closeNav()"><b>San Francisco</b></md-button>
+          </md-card-actions>
+        </md-card>
+        <md-card>
+          <md-card-actions layout="column" layout-align="center center">
+            <img src="/NY.png" alt="NY_img"/>
+            <br>
+            <md-button onclick="NewYork()"><b>New York</b></md-button>
+          </md-card-actions>
+        </md-card>
+        <md-card>
+          <md-card-actions layout="column" layout-align="center center">
+            <img src="/LA.png" alt="LA_img"/>
+            <br>
+            <md-button onclick="closeNav()"><b>Los Angeles</b></md-button>
+          </md-card-actions>
+        </md-card>
+        <md-card>
+          <md-card-actions layout="column" layout-align="center center">
+            <img src="/toronto.png" alt="Toronto_img"/>
+            <br>
+            <md-button onclick="closeNav()"><b>Toronto</b></md-button>
+          </md-card-actions>
+        </md-card>
+      </div>
+    </div>
+  </body>
+  <style>
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+  </style>
+</html>
