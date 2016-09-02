@@ -7,7 +7,7 @@ class NavbarController {
     nav.menu = [
       {title: 'Sample', state: 'sample'},
       {title: 'Map', state: 'map'},
-      {title: 'About Me', state: 'aboutme'}
+      {title: 'Workspace', state: 'workspace'}
     ];
   }
 
